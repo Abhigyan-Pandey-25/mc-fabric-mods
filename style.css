@@ -1,98 +1,40 @@
-/* General Styling */
+/* General body styling */
 body {
+    margin: 0;
+    padding: 0;
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-image: url('https://images5.alphacoders.com/120/thumb-1920-1205104.png');
-    background-size: cover; /* Covers the entire body */
-    background-position: center; /* Centers the background image */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    color: white; /* Ensures the text is visible against the background */
+    background-color: black; /* Black background */
+    color: white; /* White text color for readability */
+    text-align: center; /* Centers text by default */
 }
 
+/* Header styling */
 header {
-    background-color: #1c1c1c;
-    padding: 20px;
-    text-align: center;
+    padding: 20px 0;
+    background-color: black; /* Keep header background black */
 }
 
-header nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+/* Styling for the image */
+.discovermods {
+    display: block;
+    margin: 0 auto; /* Centers the image horizontally */
+    max-width: 100%; /* Ensures the image is responsive */
+    height: auto; /* Maintains the aspect ratio */
 }
 
-header nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-h1 {
-    margin-top: 20px;
-    color: #ff9800;
-}
-
+/* Main content styling */
 main {
-    padding: 40px 20px;
-    text-align: center;
-}
-
-section {
-    margin: 40px 0;
-}
-
-.mod-container {
+    min-height: 80vh; /* Ensures main section fills most of the viewport */
     display: flex;
+    align-items: center;
     justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
 }
 
-.mod {
-    background-color: #1c1c1c;
-    padding: 20px;
-    border-radius: 8px;
-    width: 200px;
-    text-align: left;
-}
-
-/* Download Button Styling */
-.download-button {
-    display: inline-block;
-    background-color: #ff9800;
-    color: black;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 4px;
-    margin-top: 10px;
-    transition: background-color 0.3s;
-}
-
-.download-button:hover {
-    background-color: #e68a00;
-}
-
+/* Footer styling */
 footer {
-    background-color: #1c1c1c;
     padding: 20px;
+    background-color: black;
+    color: white;
     text-align: center;
-}
-
-.info-box {
-    background-color: rgba(28, 28, 28, 0.8); /* Dark semi-transparent background */
-    padding: 20px;
-    border-radius: 8px; /* Rounded corners */
-    margin: 20px auto; /* Center the box */
-    width: 80%; /* Adjust the width as needed */
-    max-width: 800px; /* Max width to ensure it doesn't stretch too much */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow effect */
-}
-
-h2 {
-    color: #ff9800; /* Heading color */
+    font-size: 14px;
 }
