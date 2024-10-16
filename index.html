@@ -3,19 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MC Fabric Mods</title>
+    <title>Vortex MC Fabric Mods</title>
+    <meta name="description" content="Explore a variety of Minecraft Fabric Mods that enhance your gaming experience!">
+    <meta name="keywords" content="Minecraft, Fabric Mods, Vortex, Gaming, Mods">
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Body Background */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://images5.alphacoders.com/120/thumb-1920-1205104.png');
+            background-size: cover; /* Covers the entire body */
+            background-position: center; /* Centers the background image */
+            background-repeat: no-repeat; /* Prevents the image from repeating */
+            color: white; /* Ensures the text is visible against the background */
+        }
+
+        /* Info Box Styling */
+        .info-box {
+            background-color: rgba(28, 28, 28, 0.8); /* Dark semi-transparent background */
+            padding: 20px;
+            border-radius: 8px; /* Rounded corners */
+            margin: 20px auto; /* Center the box */
+            width: 80%; /* Adjust the width as needed */
+            max-width: 800px; /* Max width to ensure it doesn't stretch too much */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow effect */
+        }
+
+        /* Heading Styles */
+        h2 {
+            color: #ff9800; /* Heading color */
+        }
+
+        /* Download Button Styling */
+        .download-button {
+            background-color: #ff9800; /* Orange background */
+            color: black; /* Text and icon color */
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px; /* Space between icon and text */
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .download-button:hover {
+            background-color: #e68a00; /* Darker shade on hover */
+        }
+
+        .download-button svg {
+            fill: black; /* Color of the SVG icon */
+        }
+    </style>
 </head>
 <body>
+    <!-- Header with Navigation -->
     <header>
-        <img src="Your paragraph text.png" alt="background image" class="discovermods">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#mods">Mods</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Vortex MC Fabric Mods</h1>
     </header>
+
+    <!-- Main Content Section -->
     <main>
+        <section id="home">
+            <h2>Welcome to Vortex MC Mods</h2>
+            <p>Explore a variety of Minecraft Fabric Mods that enhance your gaming experience!</p>
+        </section>
 
+        <section id="mods">
+            <h2>Mods</h2>
+            <div class="mod-container">
+                <div class="mod">
+                    <h3>Mod 1</h3>
+                    <p>This is a <strong>modpack</strong> for fabric 1.20.1. Please consider it.</p>
+                    <!-- Download Button -->
+                    <button onclick="window.location.href='https://bba9fc96-c734-4141-9b05-7d3dd773c92d.filesusr.com/archives/fc5793_78228816cd5e428f84a3910f712b8a43.zip?dn=fabric-1.20.1.zip';" class="download-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 96 960 960" width="24">
+                            <path d="M480 806L294 620l43-43 114 114V336h60v355l114-114 43 43-186 186Zm-300 90v-60h600v60H180Z"/>
+                        </svg>
+                        Download Mod
+                    </button>                    
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section with Box -->
+        <div class="info-box" id="about">
+            <h2>About Us</h2>
+            <p>Vortex MC is dedicated to bringing you the best Minecraft mods to enhance your gaming experience.</p>
+        </div>
+
+        <!-- Contact Section with Box -->
+        <div class="info-box" id="contact">
+            <h2>Contact Us</h2>
+            <p>Email: <a href="mailto:abhigyanpandey2009@gmail.com" style="color: #ff9800;">abhigyanpandey2009@gmail.com</a></p>
+            <p>Discord ID: [Your Discord ID]</p>
+        </div>
     </main>
-    <footer>
 
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Vortex MC Fabric Mods. All Rights Reserved.</p>
     </footer>
-   
+
+    <script src="script.js"></script>
 </body>
 </html>
